@@ -1,0 +1,15 @@
+header{
+  background-color: darkcyan;
+  padding: 8px;
+  margin: 2px;
+}
+.content{
+  background-color: antiquewhite;
+  margin: auto;
+}
+button {
+  float: right;
+  shape-outside: ellipse();
+  background-color: slategrey;
+  margin-right: 10px;
+}

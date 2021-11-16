@@ -1,0 +1,75 @@
+<p>inpatient-authorization works!</p>
+<!-- Here comes the Member Form -->
+<form class="content" >
+  <h5>- Search By ID</h5>
+  <table>
+    <tr>
+      <td>
+        <label>Member ID</label><br>
+        <input type="text">
+      </td>
+      <td>
+        <label style= "margin-left: 80px; ">Date of Birth</label><br>
+        <input type="date" style= "margin-left: 80px; ">
+      </td>
+    </tr><br>
+    <hr>
+    <tr>
+       <label>Search By Member Name</label><br>
+        <input type="radio">
+      </tr>
+
+    <tr>
+      <td>
+        <label>First Name</label><br>
+        <input type="text">
+      </td>
+      <td>
+        <label style= "margin-left: 80px; ">Last Name</label><br>
+        <input type="text" style= "margin-left: 80px; ">
+      </td>
+      <td>
+        <label style=" margin-left: 80px;">Date Of Birth</label><br>
+        <input type="date" style= "margin-left: 80px; ">
+      </td>
+    </tr><br>
+
+    <tr>
+      <td>
+        <input type="checkbox">
+        <label>Include Closed</label>
+      </td>
+      <td>
+        <input type="checkbox">
+        <label>Requested By Me</label>
+      </td>
+    </tr><br>
+
+    <tr>
+      <td>
+        <button (click)="search()" style="float: left;">SEARCH</button>
+        <button (click)="reset()" style="margin-left: 80px;">RESET</button>
+      </td>
+    </tr><br>
+
+  </table>
+
+</form>
+
+<h5>-Inpatient Authorization summary</h5>
+<div>
+  <hr>
+  <button>VIEW AUTH DETAILS</button>
+  <button>EXTEND</button>
+</div><br>
+
+
+<!-- <h1>Members</h1>
+
+<ul *ngIf="members">
+  <li *ngFor="let member of members['http']">
+    <p>{{ member.first_name }} {{ member.last_name }}</p>
+  </li>
+</ul> -->
+
+
