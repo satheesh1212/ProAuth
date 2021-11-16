@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
 import { CdkTableModule } from '@angular/cdk/table';
 import {MatTableModule} from '@angular/material/table';
+import { AuthServiceService } from './services/auth-service.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {MatTableModule} from '@angular/material/table';
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [AuthServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

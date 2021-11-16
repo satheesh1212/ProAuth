@@ -5,7 +5,7 @@
       <button>Help</button>
       <button>TC Adminstration</button>
       <button>TC Admin</button>
-      <button>PROVIDERS LIST(10/10)</button>
+     <a href="/provider"><button>PROVIDERS LIST(10/10)</button></a>
     </p>
   </div>
 </header>
@@ -97,8 +97,8 @@
 
       <div>
         <p>Dashboard
-          <button>CREATE SERVICE/PROCEDURE AUTHORIZATION </button>
-          <button>CREATE INPATIENT AUTHORIZATION</button>
+          <a href="/procedure"><button>CREATE SERVICE/PROCEDURE AUTHORIZATION </button></a>
+          <a href="/inpatient"><button>CREATE INPATIENT AUTHORIZATION</button></a>
         </p>
         <hr>
       </div>
@@ -156,9 +156,10 @@
       <h5>-Inpatient Authorization summary</h5>
       <div>
         <hr>
-        <button>VIEW AUTH DETAILS</button>
-        <button>EXTEND</button>
+        <button (click)="viewDetails()">VIEW AUTH DETAILS</button>
+        <button (click)="extend()">EXTEND</button>
       </div><br>
+
 
       <!-- Tables for member -->
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -286,3 +287,23 @@
 <button type="submit" class="btn btn-primary">FILTER</button>
 <button type="submit" class="btn btn-primary">RESET</button>
 </form> -->
+
+<!-- Service Call -->
+<h1> Member API </h1>
+<hr>
+
+
+<table id="members">
+
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let member of members">
+    <td *ngFor="let col of index">
+      {{member[col]}}
+    </td>
+  </tr>
+
+</table>
