@@ -15,6 +15,8 @@ export class AuthServiceService {
   getMembers()
   {
     return this.http.get<Members[]>(this.baseUrl);
+
+
   }
 
 

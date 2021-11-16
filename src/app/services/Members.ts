@@ -22,7 +22,7 @@ export class Members
   mbr_mi_nm:any;
   mbr_lst_nm: any;
 
-    constructor(  mbr_demo_id: any,subscbr_id: any,mbr_ssn: any,mbr_dob: any,  mbr_dod: any,  mbr_gender: any,  mbr_covr_st_dt: any, mbr_covr_end_dt: any,
+constructor(  mbr_demo_id: any,subscbr_id: any,mbr_ssn: any,mbr_dob: any,  mbr_dod: any,  mbr_gender: any,  mbr_covr_st_dt: any, mbr_covr_end_dt: any,
       mbr_ethn: any,  mbr_race: any,  mbr_hm_addr_ln_1: any,mbr_hm_addr_ln_2: any,  mbr_hm_county: any,  mbr_hm_city: any,  mbr_hm_st: any,  mbr_hm_zip:any,
       mbr_tel_ph: any,  mbr_email: any, mbr_frst_nm: any,  mbr_mi_nm:any,mbr_lst_nm: any)
     {

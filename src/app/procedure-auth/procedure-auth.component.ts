@@ -11,5 +11,13 @@ export class ProcedureAuthComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  search(){
+    alert("search method works");
+  }
+
+  reset(){
+    alert("reset method works");
+
+  }
 
 }
